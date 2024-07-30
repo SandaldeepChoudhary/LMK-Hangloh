@@ -36,11 +36,12 @@ const servicesData = [
 
 export const Services = () => {
   return (
-    <section className="mb-12 xl:mb-36" id="services">
+    <section className="mb-12 xl:mb-12" id="services">
       <div className="container mx-auto">
         <h2 className="mb-12 xl:mb-24 text-center text-4xl font-bold  mx-auto">
           Services
         </h2>
+
         {/* grid items  */}
         <div className="grid xl:grid-cols-3 justify-center gap-y-12 xl:gap-y-24 xl:gap-x-8">
           {servicesData.map((item, index) => {
@@ -50,7 +51,7 @@ export const Services = () => {
                 key={index}
               >
                 <CardHeader className="text-primary absolute -top-[60px]">
-                  <div className="w-[128px] h-[80px] bg-white dark:bg-background flex justify-center items-center">
+                  <div className="w-[128px] h-[80px] bg-white dark:bg-transparent flex justify-center items-center">
                     {item.icon}
                   </div>
                 </CardHeader>
