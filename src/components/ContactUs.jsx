@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'next/link';
 import Form from './Form';
 import Image from 'next/image';
+import { Links } from './Links';
 export const ContactUs = () => {
   return (
     <div className='mx-auto container'>
@@ -23,6 +24,9 @@ export const ContactUs = () => {
             <div><iframe width="100%" height="500" className='rounded-xl' src="https://maps.google.com/maps?width=100%25&amp;height=500&amp;hl=en&amp;q=32.11603,76.46898+(Lok%20Mitra%20Kendra%20Hangloh)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe></div>
             </div>
             </div>
+          </div>
+          <div>
+            <Links/>
           </div>
         </section>
     </div>

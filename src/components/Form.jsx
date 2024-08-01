@@ -39,7 +39,7 @@ const Form = () => {
       return;
     }
 
-    toast.success("Thank you for contacting me! I'll get back to you 😊");
+    toast.success("Thank you for contacting us! We'll get back to you 😊");
     emailjs
       .sendForm("service_93i2nan", "template_o0ehj02", form.current, {
         publicKey: "HOl5DKTat_otrAqrY",
@@ -61,7 +61,11 @@ const Form = () => {
   };
 
   return (
-    <form ref={form} onSubmit={handleSubmit} className="flex flex-col gap-y-4 w-1/2 z-10">
+    <form
+      ref={form}
+      onSubmit={handleSubmit}
+      className="flex flex-col gap-y-4 w-1/2 z-10"
+    >
       {/* input  */}
       <div className="relative flex items-center ">
         <Input
@@ -71,7 +75,7 @@ const Form = () => {
           required
           placeholder="Name"
         />
-        <User className="absolute right-6" size={20} />
+        <User className="absolute right-6 " size={20} />
       </div>
       {/* Email  */}
       <div className="relative flex items-center">

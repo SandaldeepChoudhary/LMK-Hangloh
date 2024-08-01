@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import {
   Card,
@@ -6,12 +7,9 @@ import {
   CardHeader,
   CardTitle,
 } from "./ui/card";
-import {
-  FileText,
-  HandCoinsIcon,
-  Paintbrush,
-} from "lucide-react";
+import { FileText, HandCoinsIcon, Paintbrush } from "lucide-react";
 import Marquee from "react-fast-marquee";
+import { motion, useScroll } from "framer-motion";
 
 const servicesData = [
   {
@@ -66,17 +64,53 @@ export const Services = () => {
           })}
         </div>
         <div className="mt-6">
-        <Marquee >
-          <img src="/services/EdistrictLogo.png" className="w-60 h-40 lg:mx-10 mx-4 object-contain" alt="logo"/>
-            <img src="/services/CSCLogo.png" className="w-40 h-20 lg:mx-10 mx-4 object-contain" alt="logo"/>
-            <img src="/services/DigitalIndiaLogo.svg" className="w-40 h-20 lg:mx-10 mx-4 object-contain" alt="logo"/>
-            <img src="/services/AadharLogo.svg" className="w-40 h-20 lg:mx-10 mx-4 object-contain" alt="logo"/>
-            <img src="/services/AirtelLogo.svg" className="w-40 h-20 lg:mx-10 mx-4 object-contain" alt="logo"/>
-            <img src="/services/Ayushman-BharatLogo.svg" className="w-40 h-20 lg:mx-10 mx-4 object-contain" alt="logo"/>
-            <img src="/services/BSNLLogo.svg" className="w-40 h-20 lg:mx-10 mx-4 object-contain" alt="logo"/>
-            <img src="/services/HDFCLogo.svg" className="w-40 h-20 lg:mx-10 mx-4 object-contain" alt="logo"/>
-            <img src="/services/IRCTCLogo.svg" className="w-40 h-20 lg:mx-10 mx-4 object-contain" alt="logo"/>
-        </Marquee>
+          <Marquee>
+            <img
+              src="/services/EdistrictLogo.png"
+              className="w-60 h-40 lg:mx-10 mx-4 object-contain"
+              alt="logo"
+            />
+            <img
+              src="/services/CSCLogo.png"
+              className="w-40 h-20 lg:mx-10 mx-4 object-contain"
+              alt="logo"
+            />
+            <img
+              src="/services/DigitalIndiaLogo.svg"
+              className="w-40 h-20 lg:mx-10 mx-4 object-contain"
+              alt="logo"
+            />
+            <img
+              src="/services/AadharLogo.svg"
+              className="w-40 h-20 lg:mx-10 mx-4 object-contain"
+              alt="logo"
+            />
+            <img
+              src="/services/AirtelLogo.svg"
+              className="w-40 h-20 lg:mx-10 mx-4 object-contain"
+              alt="logo"
+            />
+            <img
+              src="/services/Ayushman-BharatLogo.svg"
+              className="w-40 h-20 lg:mx-10 mx-4 object-contain"
+              alt="logo"
+            />
+            <img
+              src="/services/BSNLLogo.svg"
+              className="w-40 h-20 lg:mx-10 mx-4 object-contain"
+              alt="logo"
+            />
+            <img
+              src="/services/HDFCLogo.svg"
+              className="w-40 h-20 lg:mx-10 mx-4 object-contain"
+              alt="logo"
+            />
+            <img
+              src="/services/IRCTCLogo.svg"
+              className="w-40 h-20 lg:mx-10 mx-4 object-contain"
+              alt="logo"
+            />
+          </Marquee>
         </div>
       </div>
     </section>
