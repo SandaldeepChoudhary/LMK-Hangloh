@@ -67,15 +67,15 @@ export const Services = () => {
         </div>
         <div className="mt-6">
         <Marquee >
-          <img src="EdistrictLogo.png" className="w-60 h-40 lg:mx-10 mx-4 object-contain" alt="logo"/>
-            <img src="CSCLogo.png" className="w-40 h-20 lg:mx-10 mx-4 object-contain" alt="logo"/>
-            <img src="DigitalIndiaLogo.svg" className="w-40 h-20 lg:mx-10 mx-4 object-contain" alt="logo"/>
-            <img src="AadharLogo.svg" className="w-40 h-20 lg:mx-10 mx-4 object-contain" alt="logo"/>
-            <img src="AirtelLogo.svg" className="w-40 h-20 lg:mx-10 mx-4 object-contain" alt="logo"/>
-            <img src="Ayushman-BharatLogo.svg" className="w-40 h-20 lg:mx-10 mx-4 object-contain" alt="logo"/>
-            <img src="BSNLLogo.svg" className="w-40 h-20 lg:mx-10 mx-4 object-contain" alt="logo"/>
-            <img src="HDFCLogo.svg" className="w-40 h-20 lg:mx-10 mx-4 object-contain" alt="logo"/>
-            <img src="IRCTCLogo.svg" className="w-40 h-20 lg:mx-10 mx-4 object-contain" alt="logo"/>
+          <img src="/services/EdistrictLogo.png" className="w-60 h-40 lg:mx-10 mx-4 object-contain" alt="logo"/>
+            <img src="/services/CSCLogo.png" className="w-40 h-20 lg:mx-10 mx-4 object-contain" alt="logo"/>
+            <img src="/services/DigitalIndiaLogo.svg" className="w-40 h-20 lg:mx-10 mx-4 object-contain" alt="logo"/>
+            <img src="/services/AadharLogo.svg" className="w-40 h-20 lg:mx-10 mx-4 object-contain" alt="logo"/>
+            <img src="/services/AirtelLogo.svg" className="w-40 h-20 lg:mx-10 mx-4 object-contain" alt="logo"/>
+            <img src="/services/Ayushman-BharatLogo.svg" className="w-40 h-20 lg:mx-10 mx-4 object-contain" alt="logo"/>
+            <img src="/services/BSNLLogo.svg" className="w-40 h-20 lg:mx-10 mx-4 object-contain" alt="logo"/>
+            <img src="/services/HDFCLogo.svg" className="w-40 h-20 lg:mx-10 mx-4 object-contain" alt="logo"/>
+            <img src="/services/IRCTCLogo.svg" className="w-40 h-20 lg:mx-10 mx-4 object-contain" alt="logo"/>
         </Marquee>
         </div>
       </div>

@@ -61,7 +61,7 @@ const Form = () => {
   };
 
   return (
-    <form ref={form} onSubmit={handleSubmit} className="flex flex-col gap-y-4 w-1/2 z-30">
+    <form ref={form} onSubmit={handleSubmit} className="flex flex-col gap-y-4 w-1/2 z-10">
       {/* input  */}
       <div className="relative flex items-center ">
         <Input

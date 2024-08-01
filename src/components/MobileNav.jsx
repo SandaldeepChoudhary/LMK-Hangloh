@@ -18,7 +18,7 @@ export const MobileNav = () => {
     <>
       <Sheet>
         <SheetTrigger asChild>
-          <Button variant="outline" className="border-none">
+          <Button variant="outline" className=" lg:hidden border-none rounded-full">
             <MenuIcon size={28}  />
           </Button>
         </SheetTrigger>

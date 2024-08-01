@@ -23,9 +23,9 @@ export const Navbar = () => {
             <Link href="#contact" className="hover:text-primary">
               Contact
             </Link>
-            <ThemeToggler/>
           </div>
-          <div className="lg:hidden relative">
+          <div className="relative flex gap-1">
+            <ThemeToggler/>
             <MobileNav className="absolute right-0"/>
           </div>
         </div>
