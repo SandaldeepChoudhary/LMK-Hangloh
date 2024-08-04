@@ -12,14 +12,19 @@ import {
 import { MenuIcon } from "lucide-react";
 import { Button } from "./ui/button";
 import Link from "next/link";
+import { Caveat } from "next/font/google";
 
+const caveat = Caveat({ subsets: ["latin"] });
 export const MobileNav = () => {
   return (
     <>
       <Sheet>
         <SheetTrigger asChild>
-          <Button variant="outline" className=" lg:hidden border-none rounded-full">
-            <MenuIcon size={28}  />
+          <Button
+            variant="outline"
+            className=" lg:hidden border-none rounded-full"
+          >
+            <MenuIcon size={28} />
           </Button>
         </SheetTrigger>
         <SheetContent>
@@ -27,18 +32,28 @@ export const MobileNav = () => {
             <SheetTitle>Welcome!</SheetTitle>
           </SheetHeader>
           <div className="grid gap-4 py-4">
-            <div className="grid grid-cols-1 items-center gap-4">
+            <div
+              className={`grid grid-cols-1 items-center gap-4  ${caveat.className}`}
+            >
               <Link href="#" className="font-bold">
-                Home
+                <SheetClose>
+                  <button>Home</button>
+                </SheetClose>
               </Link>
               <Link href="#services" className="font-bold">
-                Services
+                <SheetClose>
+                  <button>Services</button>
+                </SheetClose>
               </Link>
               <Link href="#about" className="font-bold">
-                About
+                <SheetClose>
+                  <button>About</button>
+                </SheetClose>
               </Link>
               <Link href="#contact" className="font-bold">
-                Contact
+                <SheetClose>
+                  <button>Contact</button>
+                </SheetClose>
               </Link>
             </div>
           </div>

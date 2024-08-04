@@ -31,14 +31,26 @@ const ClipPathLinks = () => {
   return (
     <div className="divide-y divide-neutral-900 dark:divide-white dark:border-white border border-neutral-900">
       <div className="grid grid-cols-2 divide-x divide-neutral-900 dark:divide-white ">
-        <LinkBox Icon={SiGmail} href="#" />
-        <LinkBox Icon={SiFacebook} href="#" />
+        <LinkBox Icon={SiGmail} href="mailto:lmkhangloh@gmail.com" />
+        <LinkBox
+          Icon={SiFacebook}
+          href="https://www.facebook.com/ashok.choudhary.7902/"
+        />
       </div>
       <div className="grid grid-cols-4 divide-x divide-neutral-900 dark:divide-white">
-        <LinkBox Icon={SiInstagram} href="#" />
-        <LinkBox Icon={SiTwitter} href="#" />
-        <LinkBox Icon={SiGooglemaps} href="#" />
-        <LinkBox Icon={SiLinkedin} href="#" />
+        <LinkBox
+          Icon={SiInstagram}
+          href="https://www.instagram.com/sandaldeep._/"
+        />
+        <LinkBox Icon={SiTwitter} href="https://x.com/AcceLxOvrLord/" />
+        <LinkBox
+          Icon={SiGooglemaps}
+          href="https://maps.app.goo.gl/UfRD74nfcRhQgJkt7"
+        />
+        <LinkBox
+          Icon={SiLinkedin}
+          href="https://www.linkedin.com/in/sandaldeep-in/"
+        />
       </div>
     </div>
   );
@@ -116,6 +128,7 @@ const LinkBox = ({ Icon, href }) => {
   return (
     <a
       href={href}
+      target="_blank"
       onMouseEnter={(e) => {
         handleMouseEnter(e);
       }}
