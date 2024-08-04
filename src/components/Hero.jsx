@@ -37,14 +37,29 @@ export const Hero = () => {
                   </button>
                   <div className="w-40 h-14 absolute bg-gray-300 rounded-full z-0 top-2 -right-2"></div>
                 </Link>
-                <a href="https://maps.app.goo.gl/f4fsbFaRsPcQAuh2A?g_st=ac" target="_blank">
-                <button className="w-44 h-14 rounded-full text-sm tracking-wide font-semibold hover:bg-secondary transition duration-500 ease-in-out">
-                  GET DIRECTIONS &rarr;
-                </button>
+                <a
+                  href="https://maps.app.goo.gl/f4fsbFaRsPcQAuh2A?g_st=ac"
+                  target="_blank"
+                >
+                  <button className="w-44 h-14 rounded-full text-sm tracking-wide font-semibold hover:bg-secondary transition duration-500 ease-in-out">
+                    GET DIRECTIONS &rarr;
+                  </button>
                 </a>
               </div>
-              <a className="flex items-center gap-2 my-4 hover:text-primary hover:underline transition duration-150" href="tel:+91-9317877889"><PhoneCall size={20}/>+91-9317877889</a>
-              <a className="flex items-center gap-2 my-4 hover:text-primary hover:underline transition duration-150" href="mailto:lmkhangloh@gmail.com"><Mail size={20}/>lmkhangloh@gmail.com</a>
+              <a
+                className="flex items-center gap-2 my-4 hover:text-primary hover:underline transition duration-150"
+                href="tel:+91-9317877889"
+              >
+                <PhoneCall size={20} />
+                +91-9317877889
+              </a>
+              <a
+                className="flex items-center gap-2 my-4 hover:text-primary hover:underline transition duration-150"
+                href="mailto:lmkhangloh@gmail.com"
+              >
+                <Mail size={20} />
+                lmkhangloh@gmail.com
+              </a>
             </div>
             <div className="w-full h-1/2 lg:h-screen p-4 relative">
               <div className="relative">
@@ -65,8 +80,7 @@ export const Hero = () => {
                 <img
                   src="/LmkLogo.jpg"
                   alt="Lok Mitra Kendra Logo"
-                  objectFit="contain"
-                  className="rounded-tl-[210px] rounded-tr-[285px] rounded-br-[210px] rounded-bl-[290px]  w-[510px] h-[462px] "
+                  className="rounded-tl-[210px] rounded-tr-[285px] rounded-br-[210px] rounded-bl-[290px]  w-[510px] h-[462px] lg:object-contain object-cover"
                 />
               </div>
             </div>
