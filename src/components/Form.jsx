@@ -11,8 +11,9 @@ import emailjs from "@emailjs/browser";
 //Toast
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { cn } from "@/lib/utils";
 
-const Form = () => {
+const Form = ({ onSubmit, className, ...props }) => {
   const form = useRef();
 
   const handleSubmit = (e) => {
@@ -48,6 +49,9 @@ const Form = () => {
         () => {
           console.log("Message is sent Successfully!");
           form.current.reset(); // Reset the form
+          if (onSubmit) {
+            onSubmit(); // Close the dialog
+          }
         },
         (error) => {
           console.log("FAILED...", error.text);
@@ -64,7 +68,8 @@ const Form = () => {
     <form
       ref={form}
       onSubmit={handleSubmit}
-      className="flex flex-col gap-y-4 w-1/2 z-10"
+      className={cn("flex flex-col gap-y-4 z-10 w-1/2", className)}
+      {...props}
     >
       {/* input  */}
       <div className="relative flex items-center ">
