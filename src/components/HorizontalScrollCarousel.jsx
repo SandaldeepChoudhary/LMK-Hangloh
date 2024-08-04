@@ -41,7 +41,7 @@ const Card = ({ card }) => {
   return (
     <div
       key={card.id}
-      className="group relative h-[450px] w-[450px] overflow-hidden bg-neutral-200"
+      className="group relative h-[350px] w-[350px] lg:h-[450px] lg:w-[450px] overflow-hidden bg-neutral-200"
     >
       <div
         style={{
@@ -57,7 +57,9 @@ const Card = ({ card }) => {
           <h4 className={`font-semibold ${caveat.className}`}>
             {card.subTitle}
           </h4>
-          <p className="mt-2">{card.description}</p>
+          <p className="mt-2 text-xs lg:text-lg tracking-tighter">
+            {card.description}
+          </p>
         </div>
       </div>
     </div>
