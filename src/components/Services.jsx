@@ -49,7 +49,7 @@ export const Services = () => {
                 key={index}
               >
                 <CardHeader className="text-primary absolute -top-[60px]">
-                  <div className="w-[128px] h-[80px] bg-white dark:bg-transparent flex justify-center items-center">
+                  <div className="lg:w-[128px] lg:h-[80px] w-[60px] h-[40px] bg-white dark:bg-transparent flex justify-center items-center">
                     {item.icon}
                   </div>
                 </CardHeader>
