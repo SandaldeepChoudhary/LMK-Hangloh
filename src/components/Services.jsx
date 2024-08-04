@@ -76,7 +76,7 @@ export const Services = () => {
               alt="logo"
             />
             <img
-              src="/services/DigitalIndiaLogo.svg"
+              src="/services/DigitaLIndiaLogo.svg"
               className="w-40 h-20 lg:mx-10 mx-4 object-contain"
               alt="logo"
             />
