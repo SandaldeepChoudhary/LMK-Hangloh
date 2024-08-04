@@ -12,12 +12,14 @@ export const Navbar = () => {
     <>
       <div className="w-full h-10 flex justify-center items-center">
         <div className="flex items-center justify-between w-full h-full px-4 border-b-slate-200">
-          <Image
-            src="/LmkLogoPng.png"
-            alt="Lmk Hangloh Logo"
-            width={80}
-            height={80}
-          />
+          <Link href="/">
+            <Image
+              src="/LmkLogoPng.png"
+              alt="Lmk Hangloh Logo"
+              width={80}
+              height={80}
+            />
+          </Link>
           <div
             className={`w-2/4 h-full items-center justify-between hidden lg:flex gap-4 px-4 text-lg font-semibold transition-all duration-200 ${caveat.className}`}
           >
