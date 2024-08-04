@@ -16,8 +16,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={jost.className}>
         <ThemeProvider attribute="class" defaultTheme="light">
-          <Header />
-          {children} <Footer />
+          {children}
         </ThemeProvider>
       </body>
     </html>
