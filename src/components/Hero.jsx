@@ -80,7 +80,7 @@ export const Hero = () => {
                 <img
                   src="/LmkLogo.jpg"
                   alt="Lok Mitra Kendra Logo"
-                  className="rounded-tl-[210px] rounded-tr-[285px] rounded-br-[210px] rounded-bl-[290px]  w-[510px] h-[462px] lg:object-contain object-cover"
+                  className="rounded-full lg:object-contain object-cover"
                 />
               </div>
             </div>
