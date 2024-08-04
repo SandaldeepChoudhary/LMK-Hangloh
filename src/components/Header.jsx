@@ -1,5 +1,4 @@
 "use client";
-import { ToastContainer } from "react-toastify";
 import { Navbar } from "./Navbar";
 import { useEffect, useState } from "react";
 
@@ -24,18 +23,6 @@ export const Header = () => {
     >
       <div className="container mx-auto">
         <Navbar />
-        <ToastContainer
-          position="top-center"
-          autoClose={3000}
-          hideProgressBar={false}
-          newestOnTop={false}
-          closeOnClick
-          rtl={false}
-          pauseOnFocusLoss
-          draggable
-          pauseOnHover
-          theme="light"
-        />
       </div>
     </header>
   );
