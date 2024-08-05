@@ -1,5 +1,5 @@
-import { Description } from "@radix-ui/react-dialog";
 import { motion, useTransform, useScroll } from "framer-motion";
+import { MoveDown, MoveUp } from "lucide-react";
 import { Caveat } from "next/font/google";
 import { useRef } from "react";
 
@@ -7,11 +7,18 @@ const caveat = Caveat({ subsets: ["latin"] });
 
 const ScrollCarousel = () => {
   return (
-    <div>
-      <div className="flex h-10 items-center justify-center">
-        <span className="font-bold text-4xl ">About Us</span>
+    <div className="">
+      <div className="flex h-32 items-center justify-center bg-neutral-100 dark:bg-neutral-800">
+        <span className="font-semibold uppercase grid grid-cols-1 gap-y-2 place-items-center">
+          Scroll down <MoveDown size={15} className="animate-bounce" />
+        </span>
       </div>
       <HorizontalScrollCarousel />
+      <div className="flex h-32 items-center justify-center bg-neutral-100 dark:bg-neutral-800">
+        <span className="font-semibold uppercase grid grid-cols-1 gap-y-2 place-items-center">
+          <MoveUp size={15} className="animate-bounce" /> Scroll up
+        </span>
+      </div>
     </div>
   );
 };
@@ -88,7 +95,7 @@ const cards = [
   {
     url: "/about/Pic3.jpg",
     title: "Ashok Choudhary",
-    subTitle: "Shop Owner",
+    subTitle: "Businessman",
     description:
       "Block Congress Sevadal Adhyaksh and businessman, expertly managing import-export operations with strategic insight and leadership.",
     id: 3,

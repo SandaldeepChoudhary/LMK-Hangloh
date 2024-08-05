@@ -10,6 +10,7 @@ import {
 import { FileText, HandCoinsIcon, Paintbrush } from "lucide-react";
 import Marquee from "react-fast-marquee";
 import { motion, useScroll } from "framer-motion";
+import { AutomaticCarousal } from "./AutomaticCarousal";
 
 const servicesData = [
   {
