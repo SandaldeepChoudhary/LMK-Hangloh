@@ -10,7 +10,7 @@ const caveat = Caveat({ subsets: ["latin"] });
 export const Navbar = () => {
   return (
     <>
-      <div className="w-full h-10 flex justify-center items-center">
+      <div className="w-full lg:h-10 h-14 flex justify-center items-center">
         <div className="flex items-center justify-between w-full h-full px-4 border-b-slate-200">
           <Link href="/">
             <Image
