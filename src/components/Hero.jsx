@@ -2,6 +2,7 @@ import React from "react";
 import { Caveat } from "next/font/google";
 import { Briefcase, Mail, PhoneCall, User } from "lucide-react";
 import PopUpForm from "./PopUpForm";
+import { motion } from "framer-motion";
 
 const caveat = Caveat({ subsets: ["latin"] });
 
@@ -16,9 +17,18 @@ export const Hero = () => {
                 <h1 className="font-bold text-md my-4">
                   HELLO PALAMPUR, <span className="text-primary">WE ARE</span>
                 </h1>
-                <h2 className="font-bold text-7xl text-primary">
+                <motion.h2
+                  initial={{ x: -100 }}
+                  animate={{ x: 0 }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 260,
+                    damping: 20,
+                  }}
+                  className="font-bold text-7xl text-primary"
+                >
                   Lok Mitra Kendra Hangloh
-                </h2>
+                </motion.h2>
                 <h2
                   className={`text-2xl font-semibold my-6 ${caveat.className}`}
                 >
@@ -31,12 +41,6 @@ export const Hero = () => {
                 </p>
               </div>
               <div className="py-4 flex gap-4">
-                {/* <Link href="#" className="relative">
-                  <button className="w-40 h-14 rounded-full border-black bg-white border-2 z-10 text-sm font-bold hover:bg-primary hover:text-white transition duration-500 relative ease-in-out dark:text-black dark:hover:text-white">
-                    CONTACT US
-                  </button>
-                  <div className="w-40 h-14 absolute bg-gray-300 rounded-full z-0 top-2 -right-2"></div>
-                </Link> */}
                 <PopUpForm />
                 <a
                   href="https://maps.app.goo.gl/f4fsbFaRsPcQAuh2A?g_st=ac"
@@ -64,20 +68,36 @@ export const Hero = () => {
             </div>
             <div className="w-full h-1/2 lg:h-screen p-4 relative">
               <div className="relative">
-                <div className="lg:flex justify-between items-center lg:w-44 px-4 lg:h-14 hidden bg-primary absolute bottom-32 -left-12 md:bottom-56 rounded-full">
+                <motion.div
+                  initial={{ scale: 0 }}
+                  animate={{ scale: 1 }}
+                  transition={{
+                    ease: "linear",
+                  }}
+                  className="lg:flex justify-between items-center lg:w-44 px-4 lg:h-14 hidden bg-primary absolute bottom-32 -left-12 md:bottom-56 rounded-full"
+                >
                   <User size={40} className="text-white mr-2" />
                   <h3 className="text-white font-semibold text-xs lg:text-sm flex items-center gap-2">
                     <span className="text-lg">2K+</span>{" "}
                     <div className="w-1/2">HAPPY CLIENTS</div>
                   </h3>
-                </div>
-                <div className="lg:flex justify-between items-center lg:w-44 px-4 lg:h-14 hidden bg-primary absolute top-32 right-6 md:bottom-56  rounded-full">
+                </motion.div>
+                <motion.div
+                  initial={{ scale: 0 }}
+                  animate={{ rotate: 360, scale: 1 }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 260,
+                    damping: 20,
+                  }}
+                  className="lg:flex justify-between items-center lg:w-44 px-4 lg:h-14 hidden bg-primary absolute top-32 right-6 md:bottom-56  rounded-full"
+                >
                   <Briefcase size={40} className="text-white mr-2" />
                   <h3 className="text-white font-semibold text-xs lg:text-sm flex items-center gap-2">
                     <span className="text-lg">100+</span>{" "}
                     <div className="w-1/2">SERVICES</div>
                   </h3>
-                </div>
+                </motion.div>
                 <img
                   src="/LmkLogo.jpg"
                   alt="Lok Mitra Kendra Logo"
