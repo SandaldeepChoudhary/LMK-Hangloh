@@ -40,7 +40,7 @@ export const Hero = () => {
                   service to meet all your essential needs.
                 </p>
               </div>
-              <div className="py-4 flex gap-4">
+              <div className="py-4 flex gap-6 flex-col md:flex-row">
                 <PopUpForm />
                 <a
                   href="https://maps.app.goo.gl/f4fsbFaRsPcQAuh2A?g_st=ac"
