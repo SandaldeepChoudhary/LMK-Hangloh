@@ -42,7 +42,7 @@ const Form = ({ onSubmit, className, ...props }) => {
 
     toast.success("Thank you for contacting us! We'll get back to you 😊");
     emailjs
-      .sendForm("service_93i2nan", "template_o0ehj02", form.current, {
+      .sendForm("service_anynfqw", "template_888mg74", form.current, {
         publicKey: "HOl5DKTat_otrAqrY",
       })
       .then(
