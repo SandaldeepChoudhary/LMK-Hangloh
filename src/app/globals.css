@@ -67,3 +67,8 @@
     @apply bg-background text-foreground;
   }
 }
+
+::selection {
+  background: #16A34A;
+  color: white;
+}
